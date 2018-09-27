@@ -37,8 +37,6 @@ def event_baseline_linking(events, entity2cluster, stat_output=None):
             id2 = IDs[j]
             if events[id1]['type'] == events[id2]['type']:
                 common = 0
-#                 What is this ? :
-#                             set_1.add(entity2cluster[ent])
                 all_entity_1 = set()
                 all_entity_2 = set()
                 for ii in ENTITY_TYPE_STR:
