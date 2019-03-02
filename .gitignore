@@ -20,3 +20,6 @@ venv.bak/
 
 # JetBrain
 .idea/
+
+# Data files
+*.h5
