@@ -1,3 +1,8 @@
 # gaia-clustering
 
-run `src/get_jsonhead.py`, jsonhead files for entity and events will be in 'outputs' folder
+Before any usage, set up required info in `settings.py`.
+
+## Requirements
+For reading triplestore:
+- gastrodon
+- pandas
