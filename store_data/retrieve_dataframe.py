@@ -32,7 +32,7 @@ def retrieve_dataframe(endpoint: RemoteEndpoint, query: str, path: str,
     logging.log(logging.INFO, "Querying data to {}".format(path))
     df = endpoint.select(query)
     if process:
-        for key, func in process:
+        for key, func in process.items():
             df[key] = df[key].apply(func)
 
     to_types = {column: str for column in df.columns}
